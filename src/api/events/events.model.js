@@ -8,7 +8,8 @@ const eventSchema = new mongoose.Schema(
         city: { type: Schema.Types.ObjectId, ref: "city", required: true },
         price: { type: Number, required: true, trim: true },
         description: { type: String, trim: true },
-        date: { type: String, required: true, trim: true }
+        date: { type: String, required: true, trim: true },
+        endDate: { type: String, trim: true }
     },
     {
         timestamps: true

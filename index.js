@@ -6,8 +6,8 @@
 const express = require('express');
 const cors = require('cors');
 const UserRoutes = require('./src/api/user/user.routes');
-const EventRoutes = require('./src/api/events/events.routes')
-const CitiesRoutes = require ('./src/api/cities/cities.routes')
+const EventRoutes = require('./src/api/events/events.routes');
+const CitiesRoutes = require ('./src/api/cities/cities.routes');
 const { isAuth } = require('./src/middlewares/auth');
 
 const { connect } = require('./src/db/connect');
