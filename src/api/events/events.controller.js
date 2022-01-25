@@ -33,6 +33,7 @@ const postNewEvent = async (req, res, next) => {
         newEvent.price = req.body.price
         newEvent.description = req.body.description
         newEvent.date = req.body.date
+        newEvent.endDate = req.body.endDate
         if (req.file) {
             newEvent.img = req.file.path
         }
